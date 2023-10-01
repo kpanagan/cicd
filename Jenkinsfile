@@ -27,12 +27,12 @@ pipeline {
 		stage("deploy") {
 			steps {
 				echo 'deploying the application...'
-				withCredentials([
-					usernamePassword(credentials: 'git-repo-server-credentials', usernameVariable: USER, passwordVariable: PWD)
-				]) {
-					echo "User:  ${USER}"
-					echo "Password:  ${PWD}"
-				}
+				// withCredentials([
+					// usernamePassword(credentials: 'git-repo-server-credentials', usernameVariable: USER, passwordVariable: PWD)
+				// ]) {
+					// echo "User:  ${USER}"
+					// echo "Password:  ${PWD}"
+				// }
 			}
 		}
 	}
