@@ -37,10 +37,10 @@ pipeline {
 	}
 	post {
 		always {
-			//send email about Jenkins build status
+			echo 'send email about Jenkins build status'
 		}
 		failure {
-			//Build status alert
+			echo 'Build status alert'
 		}
 	}
 }
