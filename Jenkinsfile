@@ -2,6 +2,7 @@ pipeline {
 	agent any 
 	environment {
 		//Jenkins variables can be found http://localhost:8085/env-vars.html/
+		BRANCH_NAME = 'main'
 		NEW_VERSION = '1.3.0'
 		SERVER_CREDENTIALS = credentials('git-repo-server-credentials')
 	}
